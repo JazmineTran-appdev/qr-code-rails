@@ -1,81 +1,87 @@
-<h1>QR Code Generator</h1>
+<!--<div class="main">-->
+  <h1>QR Code Generator</h1>
 
-<p>Welcome! We'll generate various types of QR codes for you if you visit the following URLs:</p>
+  <p>Welcome! We'll generate various types of QR codes for you if you visit the following URLs:</p>
 
-<dl>
-  <dt>Any text</dt>
-  <dd>
-    <code>/text?content=Your text goes here</code>
+  <dl>
+    <dt>Any text</dt>
+    <dd>
+      <code>/text?content=Your text goes here</code>
 
-    <p>Substitute your own text for <code>Your text goes here</code> .</p>
-  </dd>
+      <p>Substitute your own text for <code>Your text goes here</code> .</p>
+    </dd>
 
-  <dt>URL</dt>
-  <dd>
-    <code>/url?page=https://www.wikipedia.org</code>
+    <dt>URL</dt>
+    <dd>
+      <code>/url?page=https://www.wikipedia.org</code>
 
-    <p>Substitute your own URL for <code>https://www.wikipedia.org</code> .</p>
-  </dd>
+      <p>Substitute your own URL for <code>https://www.wikipedia.org</code> .</p>
+    </dd>
 
-  <dt>Wifi network</dt>
-  <dd>
-    <code>/wifi?ssid=Your network  name&pw=secret password</code>
+    <dt>Wifi network</dt>
+    <dd>
+      <code>/wifi?ssid=Your network  name&pw=secret password</code>
 
-    <p>Substitute your own network name for <code>Your network  name</code> and your own password for <code>secret password</code> .</p>
-  </dd>
+      <p>Substitute your own network name for <code>Your network  name</code> and your own password for <code>secret password</code> .</p>
+    </dd>
 
-  <dt>Text message</dt>
-  <dd>
-    <code>/sms?phone=9876543210&message=Hi Alice! It's me,</code>
+    <dt>Text message</dt>
+    <dd>
+      <code>/sms?phone=9876543210&message=Hi Alice! It's me,</code>
 
-    <p>Substitute your own phone number for <code>9876543210</code> and your own starter message for <code>Hi Alice! It's me,</code> .</p>
-  </dd>
-<dl>
+      <p>Substitute your own phone number for <code>9876543210</code> and your own starter message for <code>Hi Alice! It's me,</code> .</p>
+    </dd>
+  <dl>
 
-<hr>
+  <hr>
 
-<h1>Forms</h1>
+  <h1>Forms</h1>
 
-<h2>Text</h2>
-<form action="/text">
-  <label for="text-search">Text to search for:</label>
-  <input id="text-search" type="text" name="content">
+  <h2>Text</h2>
+  <p>Enter some text that you want the QR code to send as a Google search!</p>
+  <form action="/text">
+    <label for="text-search">Text:</label>
+    <input id="text-search" type="text" name="content">
 
-  <button>Generate QR Code</button>
+    <button>Generate QR Code</button>
 
-</form>
+  </form>
 
-<h2>URL</h2>
-<form action="/url">
-  <label for="url-qr">URL to link to:</label>
-  <input id="url-qr" type="text" name="url">
+  <h2>URL</h2>
+  <p>Enter the URL you want the QR code to link to!</p>
+  <form action="/url">
+    <label for="url-qr">URL:</label>
+    <input id="url-qr" type="text" name="url">
 
-  <button>Generate QR Code</button>
-</form>
+    <button>Generate QR Code</button>
+  </form>
 
-<h2>Wifi Network</h2>
-<form action="/wifi">
-  <label for="giraffe">SSID:</label>
-  <input id="giraffe" type="text" name="ssid">
+  <h2>Wifi Network</h2>
+  <p>Enter the WiFi name and password that you want the QR code to connect to!</p>
+  <form action="/wifi">
+    <label for="giraffe">SSID:</label>
+    <input id="giraffe" type="text" name="ssid">
 
-  <label for="zebra">Password:</label>
-  <input id="zebra" type="text" name="pw">
+    <label for="zebra">Password:</label>
+    <input id="zebra" type="text" name="pw">
 
-  <button>
-    Generate QR Code
-  </button>
-</form>
+    <button>
+      Generate QR Code
+    </button>
+  </form>
 
-<h2>Text Message</h2>
-<form action="/sms">
-  <label for="phone">Phone number to pre-fill</label>
-  <input id="phone" type="text" name="phone">
+  <h2>Text Message</h2>
+  <p>Enter the phone number and text message you want the QR code to pre-fill!</p>
+  <form action="/sms">
+    <label for="phone">Phone number:</label>
+    <input id="phone" type="text" name="phone">
 
-  <label for="message">Message to pre-fill</label>
-  <input id="message" type="text" name="message">
+    <label for="message">Message:</label>
+    <input id="message" type="text" name="message">
 
-  <button>
-    Generate QR Code
-  </button>
+    <button>
+      Generate QR Code
+    </button>
 
-</form>
+  </form>
+<!--</div>-->

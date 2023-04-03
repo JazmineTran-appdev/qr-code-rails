@@ -1,8 +1,14 @@
-Your text: <%= @user_text %>
+<div>
+ <h3> Your text:</h3> 
+ <div>
+    <%= @user_text %>
+ </div>
 
-<hr>
+  <div>
+    <%= @svg.html_safe %>
+  </div>
 
-<%= @svg.html_safe %>
-
-<hr>
-  <a href="/">Go back to the homepage</a>
+  <div>
+    <a href="/">Go back to the homepage</a>
+  </div>
+</div> 
