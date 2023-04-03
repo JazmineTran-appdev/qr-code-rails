@@ -31,3 +31,51 @@
     <p>Substitute your own phone number for <code>9876543210</code> and your own starter message for <code>Hi Alice! It's me,</code> .</p>
   </dd>
 <dl>
+
+<hr>
+
+<h1>Forms</h1>
+
+<h2>Text</h2>
+<form action="/text">
+  <label for="text-search">Text to search for:</label>
+  <input id="text-search" type="text" name="content">
+
+  <button>Generate QR Code</button>
+
+</form>
+
+<h2>URL</h2>
+<form action="/url">
+  <label for="url-qr">URL to link to:</label>
+  <input id="url-qr" type="text" name="url">
+
+  <button>Generate QR Code</button>
+</form>
+
+<h2>Wifi Network</h2>
+<form action="/wifi">
+  <label for="giraffe">SSID:</label>
+  <input id="giraffe" type="text" name="ssid">
+
+  <label for="zebra">Password:</label>
+  <input id="zebra" type="text" name="pw">
+
+  <button>
+    Generate QR Code
+  </button>
+</form>
+
+<h2>Text Message</h2>
+<form action="/sms">
+  <label for="phone">Phone number to pre-fill</label>
+  <input id="phone" type="text" name="phone">
+
+  <label for="message">Message to pre-fill</label>
+  <input id="message" type="text" name="message">
+
+  <button>
+    Generate QR Code
+  </button>
+
+</form>
